@@ -554,7 +554,8 @@ body {
 }
 
 .team__img {
-  width: 330px;
+  max-width: 330px;
+  widows: 100%;
   height: 450px;
   margin-bottom: 25px;
 }
