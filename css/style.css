@@ -54,7 +54,6 @@ body {
 
 .header__top {
   padding-top: 35px;
-  margin-bottom: 243px;
 }
 
 .header__top::before {
@@ -102,6 +101,13 @@ body {
 .menu li:not(:last-child) {
   margin-right: 46px;
 }
+            /* ---------------- Стиль для Header Content ---------------- */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 98px);
+  }
 
             /* ---------------- Стиль заголовка Header ---------------- */
 
@@ -111,8 +117,8 @@ body {
   font-size: 200px;
   line-height: 235px;
   text-transform: uppercase;
-  text-align: center;
   color: #0d302c;
+  margin-top: auto;
 }
             /* ---------------- Стиль текста Header ---------------- */
 .header__text {
@@ -120,18 +126,20 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  text-align: center;
-  margin-bottom: 458px;
+  margin-bottom: auto;
 }
             /* ---------------- Стиль ссылки Header ---------------- */
 .header__link {
   visibility: hidden;
+  height: 1px;
 }
 
 .header__link::before {
-  content: url('../img/header-mouse.svg');
+  content: "";
+  background-image: url('../img/header-mouse.svg');
+  background-repeat: no-repeat;
   position: absolute;
-  width: 20px;
+  width: 25px;
   height: 68px;
   visibility: visible;
   bottom: 92px;
@@ -160,7 +168,7 @@ body {
   margin-right: 120px;
 }
 
-.about__text p:not(:nth-child(7), :nth-child(8)) {
+.about__text p:nth-child(-n+6) {
     margin-bottom: 30px;
 }
 
