@@ -392,7 +392,8 @@ body {
   line-height: 18px;
   font-style: italic;
   font-weight: 300;
-  width: 862px;
+  max-width: 862px;
+  width: 100%;
   margin: 0 auto;
   text-align: right;
 }
