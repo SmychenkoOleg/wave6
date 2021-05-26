@@ -18,7 +18,6 @@ body {
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
-  letter-spacing: 0.6px;
   text-align: center;
   text-transform: uppercase;
   color: #01353e;
@@ -639,9 +638,6 @@ body {
 
 .map__inner {
   object-fit: cover;
-}
-
-.map__inner {
   position: relative;
 }
 
