@@ -458,26 +458,14 @@ body {
 /*#endregion*/
 
 /*#endregion*/
-/* .blog ::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #242121;
-  opacity: 50%;
-} */
 
 /* #region ---------------- Стили для секции Slider Blog ---------------- */
-
 .blog {
   margin-bottom: 200px;
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
 }
-
 .blog__title {
   margin-bottom: 229px;
 }
@@ -487,11 +475,19 @@ body {
   padding: 314px 0 77px;
   transform: translateX(50%);
 }
-
-.blog__wrapper {
-  margin: 0 auto;
+.blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #242121;
+  opacity: 50%;
 }
-
+.blog__wrapper {
+  /* margin: 0 auto; */
+}
 .blog__item-title {
   text-align: left;
   font-size: 48px;
@@ -500,13 +496,11 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .blog__item-text {
   text-align: left;
   color: #ffffff;
-  padding-bottom: 264px;
+  margin-bottom: 264px;
 }
-
 .slick-dots {
   list-style: none;
   display: flex;
@@ -514,11 +508,9 @@ body {
   line-height: 0;
   transform: translateX(-50%);
 }
-
 .slick-dots li:not(:last-child){
   margin-right: 15px;
 }
-
 .slick-dots button {
   font-size: 0;
   padding: 0;
@@ -530,7 +522,6 @@ body {
   outline: 0;
   cursor: pointer;
 }
-
 .slick-dots .slick-active button{
     background-color: #00b2a0;
 }
