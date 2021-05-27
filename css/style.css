@@ -458,27 +458,7 @@ body {
 /*#endregion*/
 
 /*#endregion*/
-
-/* #region ---------------- Стили для секции Slider Blog ---------------- */
-
-.blog {
-  margin-bottom: 200px;
-}
-
-.blog__title {
-  margin-bottom: 229px;
-}
-
-.blog__background {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  padding-top: 314px;
-  padding-bottom: 77px;
-}
-
-.blog__background::before {
+/* .blog ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -487,11 +467,29 @@ body {
   bottom: 0;
   background-color: #242121;
   opacity: 50%;
+} */
+
+/* #region ---------------- Стили для секции Slider Blog ---------------- */
+
+.blog {
+  margin-bottom: 200px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
 }
 
+.blog__title {
+  margin-bottom: 229px;
+}
 .blog__inner {
   max-width: 600px;
-  margin-left: auto;
+  margin: 0 auto;
+  transform: translateX(50%);
+}
+
+.blog__wrapper {
+  margin: 0 auto;
+  padding: 314px 0 370px;
 }
 
 .blog__item-title {
@@ -506,7 +504,6 @@ body {
 .blog__item-text {
   text-align: left;
   color: #ffffff;
-  margin-bottom: 259px;
 }
 
 .slick-dots {
