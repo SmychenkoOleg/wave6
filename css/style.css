@@ -484,12 +484,12 @@ body {
 .blog__inner {
   max-width: 600px;
   margin: 0 auto;
+  padding: 314px 0 77px;
   transform: translateX(50%);
 }
 
 .blog__wrapper {
   margin: 0 auto;
-  padding: 314px 0 370px;
 }
 
 .blog__item-title {
@@ -504,12 +504,15 @@ body {
 .blog__item-text {
   text-align: left;
   color: #ffffff;
+  padding-bottom: 264px;
 }
 
 .slick-dots {
   list-style: none;
   display: flex;
   justify-content: center;
+  line-height: 0;
+  transform: translateX(-50%);
 }
 
 .slick-dots li:not(:last-child){
