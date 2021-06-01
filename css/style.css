@@ -717,7 +717,7 @@ body {
 .contacts {
   max-width: 600px;
   width: 100%;
-  padding: 49px 221px 71px 52px;
+  padding: 50px 50px 70px 52px;
   background-color: #f8f8f8;
   font-size: 24px;
   font-weight: 400;
@@ -730,6 +730,8 @@ body {
 
 .address {
   font-style: normal;
+  max-width: 327px;
+  width: 100%;
 }
 
 .social__list {
