@@ -80,7 +80,7 @@ body {
   margin-right: 185px;
 }
 
-            /* ---------------- Стили для меню Header ---------------- */
+/* ---------------- Стили для меню Header ---------------- */
 .menu__list {
   display: flex;
 }
@@ -101,7 +101,8 @@ body {
 .menu li:not(:last-child) {
   margin-right: 46px;
 }
-            /* ---------------- Стиль для Header Content ---------------- */
+
+/* ---------------- Стиль для Header Content ---------------- */
 .header__content {
   display: flex;
   flex-direction: column;
@@ -109,8 +110,7 @@ body {
   height: calc(100vh - 98px);
   }
 
-            /* ---------------- Стиль заголовка Header ---------------- */
-
+/* ---------------- Стиль заголовка Header ---------------- */
 .header__title {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -120,7 +120,8 @@ body {
   color: #0d302c;
   margin-top: auto;
 }
-            /* ---------------- Стиль текста Header ---------------- */
+
+/* ---------------- Стиль текста Header ---------------- */
 .header__text {
   font-weight: 400;
   font-size: 24px;
@@ -128,7 +129,8 @@ body {
   color: #000000;
   margin-bottom: auto;
 }
-            /* ---------------- Стиль ссылки Header ---------------- */
+
+/* ---------------- Стиль ссылки Header ---------------- */
 .header__link {
   visibility: hidden;
   height: 1px;
@@ -149,10 +151,10 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Стили для секции About ---------------- */
-
 .about {
   padding: 189px 0 195px;
 }
+
 .about  h2 {
   margin-bottom: 96px;
 }
@@ -175,14 +177,12 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Стили для секции Inschool ---------------- */
-
 .inschool {
   padding: 200px 0;
   background-color: #f8f8f8;
 }
 
 /* #region ---------------- Inschool columns ---------------- */
-
 .inschool__columns {
   display: flex;
   justify-content: space-between;
@@ -231,7 +231,6 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Inschool row ---------------- */
-
 .inschool__row {
   display: flex;
   justify-content: space-between;
@@ -279,7 +278,6 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Стили для секции Doit ---------------- */
-
 .doit {
   background-repeat: no-repeat;
   background-size: 50%;
@@ -299,7 +297,6 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Стили для секции Portfolio ---------------- */
-
 .portfolio__title {
   margin-bottom: 212px;
 }
@@ -374,7 +371,6 @@ body {
 }
 
 /* #region ---------------- Portfolio Blockquote ---------------- */
-
 .blockquote {
   font-size: 36px;
   font-style: italic;
@@ -400,7 +396,6 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Portfolio Video---------------- */
-
 .portfolio__video {
   height: 600px;
   background-repeat: no-repeat;
@@ -430,7 +425,6 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Portfolio Numbers ---------------- */
-
 .portfolio__numbers {
   display: flex;
   justify-content: space-between;
@@ -441,6 +435,7 @@ body {
 .portfolio__number {
   text-align: center;
 }
+
 .portfolio__subtitle {
   font-size: 64px;
   font-weight: 700;
@@ -466,28 +461,29 @@ body {
   background-position: bottom;
   position: relative;
 }
+
 .blog__title {
   margin-bottom: 229px;
 }
+
 .blog__inner {
   max-width: 600px;
   margin: 0 auto;
   padding: 314px 0 77px;
   transform: translateX(50%);
 }
+
 .blog::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 285px;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #242121;
   opacity: 50%;
 }
-.blog__wrapper {
-  /* margin: 0 auto; */
-}
+
 .blog__item-title {
   text-align: left;
   font-size: 48px;
@@ -496,11 +492,13 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .blog__item-text {
   text-align: left;
   color: #ffffff;
   margin-bottom: 264px;
 }
+
 .slick-dots {
   list-style: none;
   display: flex;
@@ -508,9 +506,11 @@ body {
   line-height: 0;
   transform: translateX(-50%);
 }
+
 .slick-dots li:not(:last-child){
   margin-right: 15px;
 }
+
 .slick-dots button {
   font-size: 0;
   padding: 0;
@@ -522,6 +522,7 @@ body {
   outline: 0;
   cursor: pointer;
 }
+
 .slick-dots .slick-active button{
     background-color: #00b2a0;
 }
@@ -558,7 +559,6 @@ body {
 /*#endregion*/
 
 /* #region ---------------- Стили для секции Price ---------------- */
-
 .price {
   padding: 200px 0 200px;
   background-color: #f8f8f8;
@@ -577,7 +577,7 @@ body {
 .price__item {
   max-width: 360px;
   width: 100%;
-  padding: 45px 30px;
+  padding: 51px 30px;
   background-color: #ffffff;
 }
 
@@ -596,17 +596,11 @@ body {
 }
 
 .price__list--small {
-  margin-bottom: 133px;
+  margin-bottom: 135px;
 }
 
 .price__services:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.price__label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .price__value {
@@ -614,7 +608,8 @@ body {
   font-weight: 400;
   line-height: 40px;
   color: #01353e;
-  margin-right: 5px;
+  text-align: center;
+  padding-left: 18px;
 }
 
 .price__currency {
@@ -622,18 +617,19 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  transform: translate(-4px, -5px);
 }
 /*#endregion*/
 
 /* #region ---------------- Стили для секции Map ---------------- */
-
-.map {
-  padding: 200px 224px;
-}
-
-.map__inner {
+ .map__inner {
+  max-width: 1473px;
+  width: 100%;
+  height: 640px;
+  justify-content: center;
   object-fit: cover;
   position: relative;
+  margin: 200px auto;
 }
 
 .map__inner::after {
@@ -642,7 +638,9 @@ body {
   height: 70px;
   position: absolute;
   background-image: url('../img/map-pin.svg');
-  top: 99px;
+  background-repeat: no-repeat;
+
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -659,13 +657,13 @@ body {
   margin-bottom: 200px;
 }
 
-.form__fields {
+.form__request {
   max-width: 600px;
   width: 100%;
   padding-right: 31px;
 }
 
-.form__input input {
+.form__request input {
   border: none;
   border-bottom: 2px solid #dadada;
   display: block;
@@ -675,37 +673,48 @@ body {
   color: #00b2a0;
 }
 
-.form__input input:nth-child(2) {
+.form__request input:nth-child(2) {
   margin-bottom: 53px;
 }
 
-  .form__input textarea {
+  .form__message {
   border: none;
   border-bottom: 2px solid #dadada;
   display: block;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 115px;
 }
 
-.form__input input::placeholder,
-.form__input textarea::placeholder {
+.form__request input::placeholder,
+.form__message::placeholder {
   font-size: 18px;
   line-height: 18px;
   color: #00b2a0;
 }
 
-.form__input textarea::placeholder {
+.form__message::placeholder {
   width: 260px;
 }
 
 
-.form__input textarea {
+.form__message {
   resize: none;
   margin-bottom: 73px;
   overflow: hidden;
 }
 
-.form__text {
+.form__button {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #242121;
+  background-color: transparent;
+  border: 1px solid #c4c4c4;
+  padding: 25px 114px;
+}
+
+.contacts {
   max-width: 600px;
   width: 100%;
   padding: 49px 221px 71px 52px;
@@ -715,24 +724,18 @@ body {
   line-height: 30px;
 }
 
-.form__input button {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #242121;
-  background-color: transparent;
-  border: 1px solid #c4c4c4;
-  padding: 24px 111px;
+.contacts__item:nth-child(even){
+  margin-bottom: 65px;
 }
 
-.social {
-  margin-bottom: 200px;
+.address {
+  font-style: normal;
 }
 
 .social__list {
   display: flex;
   justify-content: center;
+  margin-bottom: 200px;
 }
 
 .social__link {

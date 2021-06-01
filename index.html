@@ -272,7 +272,7 @@
   <section class="portfolio">
     <div class="container">
 
-      <h2 class="portfolio__title title">
+      <h2 class="title portfolio__title">
         Галерея
       </h2>
 
@@ -393,7 +393,7 @@
   <!-- Blog Section -->
   <section class="blog" style="background-image: url('img/blog-bg_clear.jpg')">
 
-    <h2 class="blog__title title">
+    <h2 class="title blog__title">
     Блог
     </h2>
 
@@ -497,7 +497,7 @@
   <section class="team">
     <div class="container">
 
-      <h2 class="team__title title">
+      <h2 class="title team__title">
         Наша команда
       </h2>
 
@@ -530,7 +530,7 @@
   <section class="price">
     <div class="container">
 
-      <h2 class=" title price__title">
+      <h2 class="title price__title">
         Пакеты услуг
       </h2>
 
@@ -551,15 +551,11 @@
             <li class="price__services">Вечеринка с угощениями и дискотекой</li>
           </ul>
 
-          <div class="price__label">
-
-            <p class="price__value">
+          <div class="price__value">
               450
-            </p>
-
-            <p class="price__currency">
+            <span class="price__currency">
               $
-            </p>
+            </span>
           </div>
         </div>
 
@@ -580,15 +576,11 @@
             <li class="price__services">Завтраки на вилле</li>
           </ul>
 
-          <div class="price__label">
-
-            <p class="price__value">
-              950
-            </p>
-
-            <p class="price__currency">
+          <div class="price__value">
+            950
+            <span class="price__currency">
               $
-            </p>
+            </span>
           </div>
         </div>
 
@@ -609,16 +601,14 @@
             <li class="price__services">Завтраки и ужины на вилле</li>
           </ul>
 
-          <div class="price__label">
-
-            <p class="price__value">
-              1450
-            </p>
-
-            <p class="price__currency">
+          <div class="price__value">
+            1450
+            <span class="price__currency">
               $
-            </p>
+            </span>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -635,38 +625,36 @@
   <section class="form">
     <div class="container">
 
-      <h2 class="title form__title ">
+      <h2 class="title form__title">
         Оставить заявку
       </h2>
 
       <div class="form__inner">
 
-        <div class="form__fields">
-          <form class="form__input">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
-            <textarea placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
-            <button type="submit">
+          <form class="form__request">
+            <input class="form__name" type="text" placeholder="Имя">
+            <input class="form__phone" type="text" placeholder="Телефон">
+            <textarea class="form__message" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+            <button class="form__button" type="submit">
               Отправить
             </button>
           </form>
-        </div>
 
-        <div class="form__text">
-          <p>Есть вопрос?</p>
-          <p style="margin-bottom: 65px;">Вы можете связаться с нами:</p>
+          <ul class="contacts">
+            <li class="contacts__item" >Есть вопрос?</li>
+            <li class="contacts__item" >Вы можете связаться с нами:</li>
+            <li class="contacts__item" >WhatsApp, Viber, Telegram</li>
+            <li class="contacts__item" >+3 467 486-37-88</li>
+            <li class="contacts__item" >
+              <address class="address">Avenida grandes playas 79,
+                Corralejo la Oliva Fuerteventura,
+                Spain. 35660</address>
+            </li>
+            </ul>
 
-          <p>WhatsApp, Viber, Telegram</p>
-          <p style="margin-bottom: 65px;">+3 467 486-37-88</p>
-
-          <address>Avenida grandes playas 79,
-          Corralejo la Oliva Fuerteventura,
-          Spain. 35660</address>
-        </div>
+          </div>
       </div>
-    </div>
 
-    <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="https://instagram.com">
@@ -685,7 +673,6 @@
           </a>
         </li>
     </ul>
-  </div>
 
 </section>
   <!-- Footer Section -->
